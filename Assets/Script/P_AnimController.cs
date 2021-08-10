@@ -11,7 +11,7 @@ namespace VN
 
         private int _IsWalkingHash;
         private int _IsRunningHash;
-        private int _IsJackingHash;
+        private int _IsDancingHash;
 
         // Start is called before the first frame update
         void Start()
@@ -19,7 +19,7 @@ namespace VN
             _Panim = GetComponent<Animator>();
             _IsWalkingHash = Animator.StringToHash("IsWalk");
             _IsRunningHash = Animator.StringToHash("IsRun");
-            _IsJackingHash = Animator.StringToHash("IsJack");
+            _IsDancingHash = Animator.StringToHash("IsDance");
 
         }
 
@@ -31,15 +31,15 @@ namespace VN
 
         private void PMovement()
         {
-            bool _JackPress = Input.GetKey("space");
+            bool _DancePress = Input.GetKey("space");
 
-            if (_JackPress)
+            if (_DancePress)
             {
-                _Panim.SetBool(_IsJackingHash, true);
+                _Panim.SetBool(_IsDancingHash, true);
             }
-            if (!_JackPress)
+            if (!_DancePress)
             {
-                _Panim.SetBool(_IsJackingHash, false);
+                _Panim.SetBool(_IsDancingHash, false);
             }
 
 
