@@ -1,27 +1,12 @@
 fileFormatVersion: 2
-guid: 80ede23b41d32cc4ea31cf5748f15fb8
+guid: 61ab18673cafbc44f89347e4e6db3112
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: TPose
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Boss_diffuse
-    second: {fileID: 2800000, guid: 11997a16e0ad6d44593a9c642bc8de45, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Boss_normal
-    second: {fileID: 2800000, guid: 09d75c69663cb104a9eeedbf9a26fda3, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Boss_specular
-    second: {fileID: 2800000, guid: c8c6d39d17338ae4da782c9ab3691990, type: 3}
+    second: Left Strafe Walking
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -50,18 +35,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: TPose
+      name: Left Strafe Walking
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 1
+      lastFrame: 31
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -119,13 +104,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips:
-  - bb1997d6f51919c4984d1555b5e385e2
-  - cd3d9e841bed8824fa719acac6a6b998
-  - 61ab18673cafbc44f89347e4e6db3112
-  - b1cfccd7d435fcb45917afdc5283178c
-  - a6a6ee7be02078341becfc155d965b20
-  - de7014d96815d4b41babe9e8fca11b98
+  referencedClips: []
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
