@@ -122,10 +122,12 @@ ModelImporter:
   referencedClips:
   - bb1997d6f51919c4984d1555b5e385e2
   - cd3d9e841bed8824fa719acac6a6b998
+  - 4630978670abd8c42a37b92997168383
   - 61ab18673cafbc44f89347e4e6db3112
   - b1cfccd7d435fcb45917afdc5283178c
   - a6a6ee7be02078341becfc155d965b20
   - de7014d96815d4b41babe9e8fca11b98
+  - 57a21d7d43d766044bf7ebf49d48e1b1
   importAnimation: 1
   humanDescription:
     serializedVersion: 3

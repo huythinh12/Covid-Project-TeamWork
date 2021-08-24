@@ -5,18 +5,58 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: mixamo.com
+    second: Jumping Jacks
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Ch11_body
-    second: {fileID: 2100000, guid: d5c029661331e954db91f9b7c42bf519, type: 2}
+    second: {fileID: 2100000, guid: a97114d80fe89e141ad7ff14787bb678, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Ch11_body1
-    second: {fileID: 2100000, guid: 9fb12dbc0499d3a499a05a8be0cec2e9, type: 2}
+    second: {fileID: 2100000, guid: 92db36e6fbd521444af7a76f3b73a97a, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch11_1001_Diffuse
+    second: {fileID: 2800000, guid: 056dc5dd4b836b34d9331a6e3dea99c7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch11_1001_Glossiness
+    second: {fileID: 2800000, guid: b527cc860fe765941a622e2c039dd669, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch11_1001_Normal
+    second: {fileID: 2800000, guid: 758eabbbc83eccf49bb58cb12df2dfd4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch11_1001_Specular
+    second: {fileID: 2800000, guid: b55711a55fdfc4942b0591acf5e2b668, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch11_1002_Diffuse
+    second: {fileID: 2800000, guid: 30ce55cd078656a4183877ad87f2cc52, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch11_1002_Glossiness
+    second: {fileID: 2800000, guid: af989d31e5b5a3e4380166e2ab853de1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch11_1002_Normal
+    second: {fileID: 2800000, guid: a2c2b87375c219d408a954f7d9a6ed7b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch11_1002_Specular
+    second: {fileID: 2800000, guid: e440fad7965049145be948b6d31fa65d, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -43,7 +83,36 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Jumping Jacks
+      takeName: mixamo.com
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
