@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Interact_NPC : MonoBehaviour
@@ -18,12 +16,12 @@ public class Interact_NPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void nCollisionEnter(Collision collision)
     {
-        
+
     }
 
 

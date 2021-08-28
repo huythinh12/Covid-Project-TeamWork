@@ -1,12 +1,12 @@
-using UnityEngine;
 using System;
 using System.Collections;
+using UnityEngine;
 
 
 public class GameManager : MonoBehaviour
 {
     public static event Action<int> OnTimer;
-    WaitForSeconds waitToTime = new WaitForSeconds(1); 
+    WaitForSeconds waitToTime = new WaitForSeconds(1);
     [SerializeField] int timer = 60;
 
     // Start is called before the first frame update

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
@@ -51,13 +49,13 @@ public class Movement : MonoBehaviour
 
         _cCtrler.Move(move * _speed * Time.deltaTime);
 
-        if(Input.GetButtonDown("Jump") && IsGrounded)
+        if (Input.GetButtonDown("Jump") && IsGrounded)
         {
             _velocity.y = Mathf.Sqrt(_jumpHeight * -2f * _gravity);
         }
 
         _velocity.y += _gravity * Time.deltaTime;// ko phải tiếp tục update
 
-        _cCtrler.Move(_velocity * Time.deltaTime); 
+        _cCtrler.Move(_velocity * Time.deltaTime);
     }
 }
