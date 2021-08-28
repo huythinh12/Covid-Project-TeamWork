@@ -53,8 +53,18 @@ namespace VN
                 transform.rotation = Quaternion.Euler(0f, angle, 0f); //Cho phép nguyên cái nhân vậy xoay luôn
 
                 Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward; // Bắt đầu nó lấy hướng di chuyển
-
-                _Player.Move(moveDir.normalized * _speed * Time.deltaTime); // Đưa vào cho character controller
+                
+                //move on condition input
+                if (Input.GetKey(KeyCode.LeftShift))
+                {
+                    _speed = 4;
+                    _Player.Move(moveDir.normalized * _speed * Time.deltaTime); // Đưa vào cho character controller
+                }
+                else
+                {
+                    _speed = 1.5f;
+                    _Player.Move(moveDir.normalized * _speed * Time.deltaTime);
+                }
             }
 
             if (IsGrounded && _velocity.y < 0)
