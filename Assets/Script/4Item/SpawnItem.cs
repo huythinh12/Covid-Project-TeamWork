@@ -8,16 +8,14 @@ public class SpawnItem : MonoBehaviour
     private GameObject _Item;
 
     [SerializeField]
-    private float _Radius = 1f;
+    private float _spawnLimit;
 
-    //[SerializeField]
-    //private int _xPos;
+    [SerializeField]
+    private float _limit;
 
-    //[SerializeField]
-    //private int _zPos;
+    //public Vector3 _center;
 
-    //[SerializeField]
-    //private int _itemCount;
+    //public Vector3 _size;
 
     // Start is called before the first frame update
     void Start()
@@ -28,33 +26,25 @@ public class SpawnItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SpawnObjectAtRandom();
+        Spawn();
     }
 
-    //IEnumerator ItemDrop()
+    private void Spawn()
+    {
+
+        while (_spawnLimit < _limit)
+        {
+            //Vector3 pos = _center + new Vector3(Random.Range(-_size.x / 2, _size.x / 2), Random.Range(-_size.z / 2, _size.z / 2));
+            Instantiate(_Item, transform.position, transform.rotation);
+            _spawnLimit++;
+            break;  
+        }
+    }
+
+    //private void OnDrawGizmosSelected()
     //{
-    //    while(_itemCount < 50)
-    //    {
-    //        _xPos = Random.Range(-50, 50);
-    //        _zPos = Random.Range(-50, 50);
+    //    Gizmos.color = Color.red;
+    //    Gizmos.DrawWireCube(transform.localPosition + _center,_size);
 
-    //        Instantiate(_Item, new Vector3(_xPos, 0.5f, _zPos), Quaternion.identity);
-    //        yield return new WaitForSeconds(0.1f);
-    //        _itemCount += 1;
-    //    }
     //}
-
-
-    private void SpawnObjectAtRandom()
-    {
-        Vector3 randompos = Random.insideUnitSphere * _Radius;
-
-        Instantiate(_Item, randompos, Quaternion.identity);
-    }
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.green;
-
-        Gizmos.DrawWireSphere(this.transform.position, _Radius);
-    }
 }
