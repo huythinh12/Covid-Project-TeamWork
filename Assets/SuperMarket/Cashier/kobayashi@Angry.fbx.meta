@@ -6,7 +6,27 @@ ModelImporter:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kobayashi_textu1
+    second: {fileID: 2800000, guid: bbd4b2ef4d222fb43b2652c84adbdc1d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kobayashi_textu2
+    second: {fileID: 2800000, guid: 431046c94ffbc844d85ac3446bb73d89, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kobayashi_textu3
+    second: {fileID: 2800000, guid: c881e1d2070b1c243a3f3ae801616cc6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kobayashi_textu4
+    second: {fileID: 2800000, guid: 17493079f14a513468cded808b2f3792, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -37,7 +57,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 20
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -88,7 +108,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 20
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
