@@ -8,6 +8,9 @@ namespace VN
     {
         [SerializeField]
         private Transform _Player;
+        private CharacterController _PCharacterController;
+        private Rigidbody _PRigibody;
+
         [SerializeField]
         private Animator _PlayerAnim;
 
@@ -21,14 +24,14 @@ namespace VN
         private Vector3 _Standingoffset;
         [SerializeField]
         private Transform _ExitPoint;
-
-        [Space]
+        [SerializeField]
         public float _transitionSpeed = 0.2f;
 
         // Start is called before the first frame update
         void Start()
         {
-
+            _PCharacterController = GetComponent<CharacterController>();
+            _PRigibody = GetComponent<Rigidbody>();
         }
 
         // Update is called once per frame
@@ -47,14 +50,15 @@ namespace VN
         private void Enter()
         {
             //Disable Components
-            _Player.GetComponent<CharacterController>().enabled = false;
-            _Player.GetComponent<Rigidbody>().useGravity = false;
+            _PCharacterController.enabled = false;
+            _PRigibody.useGravity = false;
 
             //Move Player to designated stand point
             _Player.position = Vector3.Lerp(_Player.position, _StandPoint.position + _Standingoffset, _transitionSpeed);
             _Player.rotation = Quaternion.Slerp(_Player.rotation, _StandPoint.rotation, _transitionSpeed);
 
             //Set Player animation to standing
+            Debug.Log("Standing Trolley");
             _PlayerAnim.SetBool("IsStand", true);
 
             //The Reset - Check
@@ -70,6 +74,7 @@ namespace VN
             _Player.position = Vector3.Lerp(_Player.position, _ExitPoint.position, _transitionSpeed);
 
             //Set Player animation idle
+            Debug.Log("Walk Trolley");
             _PlayerAnim.SetBool("IsIdle", true);
 
             //The Reset - Check
@@ -80,8 +85,8 @@ namespace VN
             }
 
             //Enable Components
-            _Player.GetComponent<CharacterController>().enabled = true;
-            _Player.GetComponent<Rigidbody>().useGravity = true;
+            _PCharacterController.enabled = true;
+            _PRigibody.useGravity = true;
         }
     }
 }
