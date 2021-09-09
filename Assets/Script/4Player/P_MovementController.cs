@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using System;
 namespace VN
 {
     public class P_MovementController : MonoBehaviour
@@ -32,7 +32,10 @@ namespace VN
         Vector3 _velocity;
         [SerializeField]
         bool IsGrounded;
-
+        private void Start()
+        {
+            _Player.detectCollisions = false;
+        }
         // Update is called once per frame
         void Update()
         {
@@ -73,5 +76,8 @@ namespace VN
             }
             _velocity.y += _gravity * Time.deltaTime;
         }
+
+    
+       
     }
 }
